@@ -35,6 +35,12 @@
 		EE07CCDE28C6F41900B33CED /* GRIGSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE07CCD528C6F41900B33CED /* GRIGSDK.framework */; };
 		EE07CCE328C6F41900B33CED /* GRIGSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE07CCE228C6F41900B33CED /* GRIGSDKTests.swift */; };
 		EE07CCE428C6F41900B33CED /* GRIGSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EE07CCD828C6F41900B33CED /* GRIGSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE07CD0028C6F70000B33CED /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = EE07CCFF28C6F70000B33CED /* Apollo */; };
+		EE07CD0228C6F70000B33CED /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = EE07CD0128C6F70000B33CED /* ApolloAPI */; };
+		EE07CD0928C707B000B33CED /* GRIGEntity.graphql  in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD0828C707B000B33CED /* GRIGEntity.graphql  */; };
+		EE07CD0D28C7083900B33CED /* GRIGGeneration.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */; };
+		EE07CD1128C708D700B33CED /* GithubUser.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD1028C708D700B33CED /* GithubUser.graphql */; };
+		EE07CD1328C708F000B33CED /* TotalContribution.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD1228C708F000B33CED /* TotalContribution.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,10 @@
 		EE07CCD828C6F41900B33CED /* GRIGSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRIGSDK.h; sourceTree = "<group>"; };
 		EE07CCDD28C6F41900B33CED /* GRIGSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRIGSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE07CCE228C6F41900B33CED /* GRIGSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRIGSDKTests.swift; sourceTree = "<group>"; };
+		EE07CD0828C707B000B33CED /* GRIGEntity.graphql  */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GRIGEntity.graphql "; sourceTree = "<group>"; };
+		EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRIGGeneration.graphql; sourceTree = "<group>"; };
+		EE07CD1028C708D700B33CED /* GithubUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; name = GithubUser.graphql; path = "../../../../../../../../../../Volumes/Macintosh HD - Data/GithubUser.graphql"; sourceTree = "<group>"; };
+		EE07CD1228C708F000B33CED /* TotalContribution.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TotalContribution.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE07CD0228C6F70000B33CED /* ApolloAPI in Frameworks */,
+				EE07CD0028C6F70000B33CED /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +106,10 @@
 		EE07CCD728C6F41900B33CED /* GRIGSDK */ = {
 			isa = PBXGroup;
 			children = (
+				EE07CD0628C7026100B33CED /* Request */,
+				EE07CD0528C7014300B33CED /* Extension */,
+				EE07CD0428C7013900B33CED /* GRIG */,
+				EE07CD0328C6F70600B33CED /* Model */,
 				EE07CCD828C6F41900B33CED /* GRIGSDK.h */,
 			);
 			path = GRIGSDK;
@@ -105,6 +121,54 @@
 				EE07CCE228C6F41900B33CED /* GRIGSDKTests.swift */,
 			);
 			path = GRIGSDKTests;
+			sourceTree = "<group>";
+		};
+		EE07CD0328C6F70600B33CED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE07CD0B28C7082300B33CED /* Github */,
+				EE07CD0A28C7081300B33CED /* GRIG */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EE07CD0428C7013900B33CED /* GRIG */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GRIG;
+			sourceTree = "<group>";
+		};
+		EE07CD0528C7014300B33CED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE07CD0628C7026100B33CED /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EE07CD0A28C7081300B33CED /* GRIG */ = {
+			isa = PBXGroup;
+			children = (
+				EE07CD0828C707B000B33CED /* GRIGEntity.graphql  */,
+				EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */,
+			);
+			path = GRIG;
+			sourceTree = "<group>";
+		};
+		EE07CD0B28C7082300B33CED /* Github */ = {
+			isa = PBXGroup;
+			children = (
+				EE07CD1028C708D700B33CED /* GithubUser.graphql */,
+				EE07CD1228C708F000B33CED /* TotalContribution.graphql */,
+			);
+			path = Github;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,12 +193,17 @@
 				EE07CCD128C6F41900B33CED /* Sources */,
 				EE07CCD228C6F41900B33CED /* Frameworks */,
 				EE07CCD328C6F41900B33CED /* Resources */,
+				EE07CD0728C704C900B33CED /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = GRIGSDK;
+			packageProductDependencies = (
+				EE07CCFF28C6F70000B33CED /* Apollo */,
+				EE07CD0128C6F70000B33CED /* ApolloAPI */,
+			);
 			productName = GRIGSDK;
 			productReference = EE07CCD528C6F41900B33CED /* GRIGSDK.framework */;
 			productType = "com.apple.product-type.framework";
@@ -169,6 +238,7 @@
 				TargetAttributes = {
 					EE07CCD428C6F41900B33CED = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					EE07CCDC28C6F41900B33CED = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -190,6 +260,9 @@
 				Base,
 			);
 			mainGroup = EE07CCCB28C6F41900B33CED;
+			packageReferences = (
+				EE07CCFE28C6F70000B33CED /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = EE07CCD628C6F41900B33CED /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,6 +280,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE07CD0D28C7083900B33CED /* GRIGGeneration.graphql in Resources */,
+				EE07CD0928C707B000B33CED /* GRIGEntity.graphql  in Resources */,
+				EE07CD1328C708F000B33CED /* TotalContribution.graphql in Resources */,
+				EE07CD1128C708D700B33CED /* GithubUser.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +331,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Build Device and Simulator versions\nxcodebuild archive -scheme \"${PROJECT_NAME}\" -archivePath \"${BUILD_DIR}/iphoneos.xcarchive\" -sdk iphoneos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\nxcodebuild archive -scheme \"${PROJECT_NAME}\" -archivePath \"${BUILD_DIR}/iphonesimulator.xcarchive\" -sdk iphonesimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\nxcodebuild -create-xcframework \\\n    -framework \"${BUILD_DIR}/iphoneos.xcarchive/Products/Library/Frameworks/\"${PROJECT_NAME}\".framework\" \\\n    -framework \"${BUILD_DIR}/iphonesimulator.xcarchive/Products/Library/Frameworks/\"${PROJECT_NAME}\".framework\" \\\n    -output \"${BUILD_DIR}/\"${PROJECT_NAME}\".xcframework\"\n\n    \n# Copy the xcframework to the project directory\ncp -R \"${BUILD_DIR}/\"${PROJECT_NAME}\".xcframework\" \"${PROJECT_DIR}\"\n\n# Open the project directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+		EE07CD0728C704C900B33CED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./**/*.graphql --localSchemaFile=\"schema.json\" API.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -407,6 +501,7 @@
 		EE07CCE828C6F41900B33CED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -427,6 +522,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -435,6 +531,7 @@
 		EE07CCE928C6F41900B33CED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -463,6 +560,7 @@
 		EE07CCEB28C6F41900B33CED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
@@ -479,6 +577,7 @@
 		EE07CCEC28C6F41900B33CED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
@@ -577,6 +676,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE07CCFE28C6F70000B33CED /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE07CCFF28C6F70000B33CED /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE07CCFE28C6F70000B33CED /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		EE07CD0128C6F70000B33CED /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE07CCFE28C6F70000B33CED /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE07CCCC28C6F41900B33CED /* Project object */;
 }
