@@ -6,6 +6,31 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		EE07CCED28C6F42C00B33CED /* Universal_GRIG_XCFramework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EE07CCEE28C6F42C00B33CED /* Build configuration list for PBXAggregateTarget "Universal_GRIG_XCFramework" */;
+			buildPhases = (
+				EE07CCF628C6F46600B33CED /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal_GRIG_XCFramework;
+			productName = Universal_GRIG_XCFramework;
+		};
+		EE07CCF128C6F44200B33CED /* Universal_GRIG_Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = EE07CCF228C6F44200B33CED /* Build configuration list for PBXAggregateTarget "Universal_GRIG_Framework" */;
+			buildPhases = (
+				EE07CCF528C6F44700B33CED /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = Universal_GRIG_Framework;
+			productName = Universal_GRIG_Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		EE07CCDE28C6F41900B33CED /* GRIGSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE07CCD528C6F41900B33CED /* GRIGSDK.framework */; };
 		EE07CCE328C6F41900B33CED /* GRIGSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE07CCE228C6F41900B33CED /* GRIGSDKTests.swift */; };
@@ -148,6 +173,12 @@
 					EE07CCDC28C6F41900B33CED = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
+					EE07CCED28C6F42C00B33CED = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					EE07CCF128C6F44200B33CED = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = EE07CCCF28C6F41900B33CED /* Build configuration list for PBXProject "GRIGSDK" */;
@@ -165,6 +196,8 @@
 			targets = (
 				EE07CCD428C6F41900B33CED /* GRIGSDK */,
 				EE07CCDC28C6F41900B33CED /* GRIGSDKTests */,
+				EE07CCED28C6F42C00B33CED /* Universal_GRIG_XCFramework */,
+				EE07CCF128C6F44200B33CED /* Universal_GRIG_Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -185,6 +218,44 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE07CCF528C6F44700B33CED /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "UNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-Universal\n  \n# Make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n  \n# Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" BITCODE_GENERATION_MODE=bitcode OTHER_CFLAGS=\"-fembed-bitcode\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n  \n  \n# Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n  \n# Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\n  \n# Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\" -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n  \n# Copy the framework to the project directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n  \n# Open the project directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+		EE07CCF628C6F46600B33CED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Build Device and Simulator versions\nxcodebuild archive -scheme \"${PROJECT_NAME}\" -archivePath \"${BUILD_DIR}/iphoneos.xcarchive\" -sdk iphoneos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\nxcodebuild archive -scheme \"${PROJECT_NAME}\" -archivePath \"${BUILD_DIR}/iphonesimulator.xcarchive\" -sdk iphonesimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\nxcodebuild -create-xcframework \\\n    -framework \"${BUILD_DIR}/iphoneos.xcarchive/Products/Library/Frameworks/\"${PROJECT_NAME}\".framework\" \\\n    -framework \"${BUILD_DIR}/iphonesimulator.xcarchive/Products/Library/Frameworks/\"${PROJECT_NAME}\".framework\" \\\n    -output \"${BUILD_DIR}/\"${PROJECT_NAME}\".xcframework\"\n\n    \n# Copy the xcframework to the project directory\ncp -R \"${BUILD_DIR}/\"${PROJECT_NAME}\".xcframework\" \"${PROJECT_DIR}\"\n\n# Open the project directory in Finder\nopen \"${PROJECT_DIR}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE07CCD128C6F41900B33CED /* Sources */ = {
@@ -421,6 +492,42 @@
 			};
 			name = Release;
 		};
+		EE07CCEF28C6F42C00B33CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE07CCF028C6F42C00B33CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE07CCF328C6F44200B33CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE07CCF428C6F44200B33CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q2JZBR7H7Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -447,6 +554,24 @@
 			buildConfigurations = (
 				EE07CCEB28C6F41900B33CED /* Debug */,
 				EE07CCEC28C6F41900B33CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE07CCEE28C6F42C00B33CED /* Build configuration list for PBXAggregateTarget "Universal_GRIG_XCFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE07CCEF28C6F42C00B33CED /* Debug */,
+				EE07CCF028C6F42C00B33CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE07CCF228C6F44200B33CED /* Build configuration list for PBXAggregateTarget "Universal_GRIG_Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE07CCF328C6F44200B33CED /* Debug */,
+				EE07CCF428C6F44200B33CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
