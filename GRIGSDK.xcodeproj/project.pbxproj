@@ -39,8 +39,16 @@
 		EE07CD0228C6F70000B33CED /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = EE07CD0128C6F70000B33CED /* ApolloAPI */; };
 		EE07CD0928C707B000B33CED /* GRIGEntity.graphql  in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD0828C707B000B33CED /* GRIGEntity.graphql  */; };
 		EE07CD0D28C7083900B33CED /* GRIGGeneration.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */; };
-		EE07CD1128C708D700B33CED /* GithubUser.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD1028C708D700B33CED /* GithubUser.graphql */; };
 		EE07CD1328C708F000B33CED /* TotalContribution.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD1228C708F000B33CED /* TotalContribution.graphql */; };
+		EE07CD3E28C72FB200B33CED /* GithubUser.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD3D28C72FB200B33CED /* GithubUser.graphql */; };
+		EECF15FF28C818D400AE3493 /* githubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF15FD28C818D400AE3493 /* githubAPI.swift */; };
+		EECF160028C818D400AE3493 /* grigAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF15FE28C818D400AE3493 /* grigAPI.swift */; };
+		EECF160528C820AB00AE3493 /* GithubRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF160428C820AB00AE3493 /* GithubRemote.swift */; };
+		EECF160728C820C600AE3493 /* GRIGRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF160628C820C600AE3493 /* GRIGRemote.swift */; };
+		EECF160928C8210B00AE3493 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF160828C8210B00AE3493 /* NetworkInterceptorProvider.swift */; };
+		EECF160D28C8238800AE3493 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EECF160C28C8238800AE3493 /* .gitkeep */; };
+		EEDC733528C79D5B00795D88 /* github.json in Resources */ = {isa = PBXBuildFile; fileRef = EEDC733328C79D5B00795D88 /* github.json */; };
+		EEDC733628C79D5B00795D88 /* grig.json in Resources */ = {isa = PBXBuildFile; fileRef = EEDC733428C79D5B00795D88 /* grig.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +68,18 @@
 		EE07CCE228C6F41900B33CED /* GRIGSDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRIGSDKTests.swift; sourceTree = "<group>"; };
 		EE07CD0828C707B000B33CED /* GRIGEntity.graphql  */ = {isa = PBXFileReference; lastKnownFileType = text; path = "GRIGEntity.graphql "; sourceTree = "<group>"; };
 		EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRIGGeneration.graphql; sourceTree = "<group>"; };
-		EE07CD1028C708D700B33CED /* GithubUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; name = GithubUser.graphql; path = "../../../../../../../../../../Volumes/Macintosh HD - Data/GithubUser.graphql"; sourceTree = "<group>"; };
 		EE07CD1228C708F000B33CED /* TotalContribution.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TotalContribution.graphql; sourceTree = "<group>"; };
+		EE07CD3D28C72FB200B33CED /* GithubUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubUser.graphql; sourceTree = "<group>"; };
+		EECF15FD28C818D400AE3493 /* githubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = githubAPI.swift; sourceTree = "<group>"; };
+		EECF15FE28C818D400AE3493 /* grigAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = grigAPI.swift; sourceTree = "<group>"; };
+		EECF160428C820AB00AE3493 /* GithubRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRemote.swift; sourceTree = "<group>"; };
+		EECF160628C820C600AE3493 /* GRIGRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRIGRemote.swift; sourceTree = "<group>"; };
+		EECF160828C8210B00AE3493 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
+		EECF160C28C8238800AE3493 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EECF160E28C8238D00AE3493 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EECF160F28C8239400AE3493 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EEDC733328C79D5B00795D88 /* github.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = github.json; sourceTree = "<group>"; };
+		EEDC733428C79D5B00795D88 /* grig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grig.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +124,9 @@
 		EE07CCD728C6F41900B33CED /* GRIGSDK */ = {
 			isa = PBXGroup;
 			children = (
+				EECF160A28C8235900AE3493 /* Logging */,
+				EEDC733328C79D5B00795D88 /* github.json */,
+				EEDC733428C79D5B00795D88 /* grig.json */,
 				EE07CD0628C7026100B33CED /* Request */,
 				EE07CD0528C7014300B33CED /* Extension */,
 				EE07CD0428C7013900B33CED /* GRIG */,
@@ -126,8 +147,7 @@
 		EE07CD0328C6F70600B33CED /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE07CD0B28C7082300B33CED /* Github */,
-				EE07CD0A28C7081300B33CED /* GRIG */,
+				EE07CD4328C73EF400B33CED /* Sources */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -135,6 +155,7 @@
 		EE07CD0428C7013900B33CED /* GRIG */ = {
 			isa = PBXGroup;
 			children = (
+				EECF160F28C8239400AE3493 /* .gitkeep */,
 			);
 			path = GRIG;
 			sourceTree = "<group>";
@@ -142,6 +163,7 @@
 		EE07CD0528C7014300B33CED /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EECF160E28C8238D00AE3493 /* .gitkeep */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -149,6 +171,8 @@
 		EE07CD0628C7026100B33CED /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				EECF160328C8208B00AE3493 /* Remote */,
+				EECF160128C81FC300AE3493 /* Entitiy */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -165,10 +189,54 @@
 		EE07CD0B28C7082300B33CED /* Github */ = {
 			isa = PBXGroup;
 			children = (
-				EE07CD1028C708D700B33CED /* GithubUser.graphql */,
 				EE07CD1228C708F000B33CED /* TotalContribution.graphql */,
+				EE07CD3D28C72FB200B33CED /* GithubUser.graphql */,
 			);
 			path = Github;
+			sourceTree = "<group>";
+		};
+		EE07CD4328C73EF400B33CED /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EE07CD0B28C7082300B33CED /* Github */,
+				EE07CD0A28C7081300B33CED /* GRIG */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EECF160128C81FC300AE3493 /* Entitiy */ = {
+			isa = PBXGroup;
+			children = (
+				EECF15FD28C818D400AE3493 /* githubAPI.swift */,
+				EECF15FE28C818D400AE3493 /* grigAPI.swift */,
+			);
+			path = Entitiy;
+			sourceTree = "<group>";
+		};
+		EECF160328C8208B00AE3493 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				EECF160428C820AB00AE3493 /* GithubRemote.swift */,
+				EECF160628C820C600AE3493 /* GRIGRemote.swift */,
+				EECF160828C8210B00AE3493 /* NetworkInterceptorProvider.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		EECF160A28C8235900AE3493 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				EECF160B28C8236100AE3493 /* OSLog */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		EECF160B28C8236100AE3493 /* OSLog */ = {
+			isa = PBXGroup;
+			children = (
+				EECF160C28C8238800AE3493 /* .gitkeep */,
+			);
+			path = OSLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,10 +258,10 @@
 			buildConfigurationList = EE07CCE728C6F41900B33CED /* Build configuration list for PBXNativeTarget "GRIGSDK" */;
 			buildPhases = (
 				EE07CCD028C6F41900B33CED /* Headers */,
+				EE07CD3828C70D4200B33CED /* Generate Apollo GraphQL API */,
 				EE07CCD128C6F41900B33CED /* Sources */,
 				EE07CCD228C6F41900B33CED /* Frameworks */,
 				EE07CCD328C6F41900B33CED /* Resources */,
-				EE07CD0728C704C900B33CED /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -280,10 +348,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEDC733628C79D5B00795D88 /* grig.json in Resources */,
+				EEDC733528C79D5B00795D88 /* github.json in Resources */,
 				EE07CD0D28C7083900B33CED /* GRIGGeneration.graphql in Resources */,
+				EE07CD3E28C72FB200B33CED /* GithubUser.graphql in Resources */,
 				EE07CD0928C707B000B33CED /* GRIGEntity.graphql  in Resources */,
 				EE07CD1328C708F000B33CED /* TotalContribution.graphql in Resources */,
-				EE07CD1128C708D700B33CED /* GithubUser.graphql in Resources */,
+				EECF160D28C8238800AE3493 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +403,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Build Device and Simulator versions\nxcodebuild archive -scheme \"${PROJECT_NAME}\" -archivePath \"${BUILD_DIR}/iphoneos.xcarchive\" -sdk iphoneos SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\nxcodebuild archive -scheme \"${PROJECT_NAME}\" -archivePath \"${BUILD_DIR}/iphonesimulator.xcarchive\" -sdk iphonesimulator SKIP_INSTALL=NO BUILD_LIBRARY_FOR_DISTRIBUTION=YES\n\nxcodebuild -create-xcframework \\\n    -framework \"${BUILD_DIR}/iphoneos.xcarchive/Products/Library/Frameworks/\"${PROJECT_NAME}\".framework\" \\\n    -framework \"${BUILD_DIR}/iphonesimulator.xcarchive/Products/Library/Frameworks/\"${PROJECT_NAME}\".framework\" \\\n    -output \"${BUILD_DIR}/\"${PROJECT_NAME}\".xcframework\"\n\n    \n# Copy the xcframework to the project directory\ncp -R \"${BUILD_DIR}/\"${PROJECT_NAME}\".xcframework\" \"${PROJECT_DIR}\"\n\n# Open the project directory in Finder\nopen \"${PROJECT_DIR}\"\n";
 		};
-		EE07CD0728C704C900B33CED /* ShellScript */ = {
+		EE07CD3828C70D4200B33CED /* Generate Apollo GraphQL API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -340,15 +411,17 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/GRIGSDK/Model/Sources/**/*.graphql",
 			);
+			name = "Generate Apollo GraphQL API";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"$(SRCROOT)/GRIGSDK/Request",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "# Don't run this during index builds\nif [ $ACTION = \"indexbuild\" ]; then exit 0; fi\n\n# Go to the build root and search up the chain to find the Derived Data Path where the source packages are checked out.\nDERIVED_DATA_CANDIDATE=\"${BUILD_ROOT}\"\n\nwhile ! [ -d \"${DERIVED_DATA_CANDIDATE}/SourcePackages\" ]; do\n  if [ \"${DERIVED_DATA_CANDIDATE}\" = / ]; then\n    echo >&2 \"error: Unable to locate SourcePackages directory from BUILD_ROOT: '${BUILD_ROOT}'\"\n    exit 1\n  fi\n\n  DERIVED_DATA_CANDIDATE=\"$(dirname \"${DERIVED_DATA_CANDIDATE}\")\"\ndone\n\n# Grab a reference to the directory where scripts are checked out\nSCRIPT_PATH=\"${DERIVED_DATA_CANDIDATE}/SourcePackages/checkouts/apollo-ios/scripts\"\n\nif [ -z \"${SCRIPT_PATH}\" ]; then\n    echo >&2 \"error: Couldn't find the CLI script in your checked out SPM packages; make sure to add the framework to your project.\"\n    exit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./Model/Sources/GRIG/*.graphql --localSchemaFile=\"grig.json\" Request/Entitiy/grigAPI.swift\n\"${SCRIPT_PATH}\"/run-bundled-codegen.sh codegen:generate --target=swift --includes=./Model/Sources/Github/*.graphql --localSchemaFile=\"github.json\" Request/Entitiy/githubAPI.swift\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -357,6 +430,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECF160728C820C600AE3493 /* GRIGRemote.swift in Sources */,
+				EECF15FF28C818D400AE3493 /* githubAPI.swift in Sources */,
+				EECF160928C8210B00AE3493 /* NetworkInterceptorProvider.swift in Sources */,
+				EECF160528C820AB00AE3493 /* GithubRemote.swift in Sources */,
+				EECF160028C818D400AE3493 /* grigAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
