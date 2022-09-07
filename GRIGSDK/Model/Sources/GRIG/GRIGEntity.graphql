@@ -14,3 +14,4 @@ query GRIGEntity($criteria: String, $count: Int, $page: Int, $generation: Int) {
     contributions
   }
 }
+
