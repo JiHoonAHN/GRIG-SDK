@@ -1,8 +1,9 @@
-//
-//  GithubRemote.swift
-//  GRIGSDK
-//
-//  Created by Ji-hoon Ahn on 2022/09/07.
-//
-
 import Foundation
+import Apollo
+
+final class GRIGRemote {
+    //MARK: - Properties
+    static let shared = GRIGRemote()
+    
+
+}
