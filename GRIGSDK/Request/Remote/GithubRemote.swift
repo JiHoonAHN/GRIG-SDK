@@ -4,7 +4,7 @@ import Apollo
 final class GithubRemote {
     //MARK: - Properties
     static let shared = GithubRemote()
-
+    
     private let client: ApolloClient = {
         let url = URL(string: "https://api.github.com/graphql")!
         let store = ApolloStore(cache: InMemoryNormalizedCache())
@@ -31,8 +31,10 @@ final class GithubRemote {
         ) { res in
             switch res {
             case let .success(data):
+                Log.network("User Info Success", data)
                 completion(.success(data.data?.user ?? nil))
             case let .failure(err):
+                Log.error("User Info Fail : \(err.localizedDescription)", err)
                 completion(.failure(err))
             }
         }
@@ -45,8 +47,10 @@ final class GithubRemote {
         client.fetch(query: GRIGAPI.TotalContributionQuery(login: login)) { res in
             switch res {
             case let .success(data):
-                    completion(.success(data.data?.user?.contributionsCollection.contributionCalendar.totalContributions ?? nil))
+                Log.network("User Total Contribution Success", data)
+                completion(.success(data.data?.user?.contributionsCollection.contributionCalendar.totalContributions ?? nil))
             case let .failure(err):
+                Log.error("User Total Contribution Fail : \(err.localizedDescription)", err)
                 completion(.failure(err))
             }
         }

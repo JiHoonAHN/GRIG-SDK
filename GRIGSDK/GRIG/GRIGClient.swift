@@ -6,7 +6,6 @@ public final class GRIG {
     
     private let grigRemote = GRIGRemote()
     private let githubRemote = GithubRemote()
-    
 }
 
 //MARK: - GithubRemote

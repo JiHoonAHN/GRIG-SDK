@@ -19,8 +19,10 @@ final class GRIGRemote {
         ) { res in
             switch res {
             case let .success(data):
+                Log.network("Ranking List Success", data)
                 completion(.success(data.data?.ranking ?? [] ))
             case let .failure(err):
+                Log.error("Ranking List Fail : \(err.localizedDescription)", err)
                 completion(.failure(err))
             }
         }
@@ -30,8 +32,10 @@ final class GRIGRemote {
         client.fetch(query: GRIGAPI.GrigGenerationQuery()) { res in
             switch res {
             case let .success(data):
+                Log.network("Generation List Success", data)
                 completion(.success(data.data?.generation ?? []))
             case let .failure(err):
+                Log.error("Generation List Fail : \(err.localizedDescription)", err)
                 completion(.failure(err))
             }
         }

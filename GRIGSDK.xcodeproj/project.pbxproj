@@ -134,7 +134,6 @@
 		EE07CCD728C6F41900B33CED /* GRIGSDK */ = {
 			isa = PBXGroup;
 			children = (
-				EECF160A28C8235900AE3493 /* Logging */,
 				EEDC733328C79D5B00795D88 /* github.json */,
 				EEDC733428C79D5B00795D88 /* grig.json */,
 				EE07CD0628C7026100B33CED /* Request */,
@@ -218,6 +217,7 @@
 		EE3E632428CCBF3300E13E55 /* OSLog */ = {
 			isa = PBXGroup;
 			children = (
+				EE3E632228CCBE9800E13E55 /* Log.swift */,
 				EE3E632528CCBF3D00E13E55 /* OSLogExt.swift */,
 			);
 			path = OSLog;
@@ -251,22 +251,6 @@
 				EECF160828C8210B00AE3493 /* NetworkInterceptorProvider.swift */,
 			);
 			path = Remote;
-			sourceTree = "<group>";
-		};
-		EECF160A28C8235900AE3493 /* Logging */ = {
-			isa = PBXGroup;
-			children = (
-				EECF160B28C8236100AE3493 /* OSLog */,
-			);
-			path = Logging;
-			sourceTree = "<group>";
-		};
-		EECF160B28C8236100AE3493 /* OSLog */ = {
-			isa = PBXGroup;
-			children = (
-				EE3E632228CCBE9800E13E55 /* Log.swift */,
-			);
-			path = OSLog;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
