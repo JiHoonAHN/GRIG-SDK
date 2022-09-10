@@ -40,10 +40,12 @@
 		EE07CD0D28C7083900B33CED /* GRIGGeneration.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */; };
 		EE07CD1328C708F000B33CED /* TotalContribution.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD1228C708F000B33CED /* TotalContribution.graphql */; };
 		EE07CD3E28C72FB200B33CED /* GithubUser.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EE07CD3D28C72FB200B33CED /* GithubUser.graphql */; };
+		EE9466F628C9C3A5003254B7 /* Criteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9466F528C9C3A5003254B7 /* Criteria.swift */; };
 		EECF160528C820AB00AE3493 /* GithubRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF160428C820AB00AE3493 /* GithubRemote.swift */; };
 		EECF160728C820C600AE3493 /* GRIGRemote.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF160628C820C600AE3493 /* GRIGRemote.swift */; };
 		EECF160928C8210B00AE3493 /* NetworkInterceptorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECF160828C8210B00AE3493 /* NetworkInterceptorProvider.swift */; };
 		EECF160D28C8238800AE3493 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = EECF160C28C8238800AE3493 /* .gitkeep */; };
+		EED7AAD928C9B24600BDCF24 /* GRIGClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED7AAD828C9B24600BDCF24 /* GRIGClient.swift */; };
 		EEDC733528C79D5B00795D88 /* github.json in Resources */ = {isa = PBXBuildFile; fileRef = EEDC733328C79D5B00795D88 /* github.json */; };
 		EEDC733628C79D5B00795D88 /* grig.json in Resources */ = {isa = PBXBuildFile; fileRef = EEDC733428C79D5B00795D88 /* grig.json */; };
 		EEFDFF4F28C8AE9A0099F0A2 /* GRIGEntity.graphql in Resources */ = {isa = PBXBuildFile; fileRef = EEFDFF4E28C8AE9A0099F0A2 /* GRIGEntity.graphql */; };
@@ -72,12 +74,13 @@
 		EE07CD0C28C7083900B33CED /* GRIGGeneration.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRIGGeneration.graphql; sourceTree = "<group>"; };
 		EE07CD1228C708F000B33CED /* TotalContribution.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = TotalContribution.graphql; sourceTree = "<group>"; };
 		EE07CD3D28C72FB200B33CED /* GithubUser.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GithubUser.graphql; sourceTree = "<group>"; };
+		EE9466F528C9C3A5003254B7 /* Criteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Criteria.swift; sourceTree = "<group>"; };
 		EECF160428C820AB00AE3493 /* GithubRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRemote.swift; sourceTree = "<group>"; };
 		EECF160628C820C600AE3493 /* GRIGRemote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRIGRemote.swift; sourceTree = "<group>"; };
 		EECF160828C8210B00AE3493 /* NetworkInterceptorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterceptorProvider.swift; sourceTree = "<group>"; };
 		EECF160C28C8238800AE3493 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		EECF160E28C8238D00AE3493 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
-		EECF160F28C8239400AE3493 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		EED7AAD828C9B24600BDCF24 /* GRIGClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GRIGClient.swift; sourceTree = "<group>"; };
 		EEDC733328C79D5B00795D88 /* github.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = github.json; sourceTree = "<group>"; };
 		EEDC733428C79D5B00795D88 /* grig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = grig.json; sourceTree = "<group>"; };
 		EEFDFF4E28C8AE9A0099F0A2 /* GRIGEntity.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = GRIGEntity.graphql; sourceTree = "<group>"; };
@@ -161,7 +164,7 @@
 		EE07CD0428C7013900B33CED /* GRIG */ = {
 			isa = PBXGroup;
 			children = (
-				EECF160F28C8239400AE3493 /* .gitkeep */,
+				EED7AAD828C9B24600BDCF24 /* GRIGClient.swift */,
 			);
 			path = GRIG;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 		EE07CD0628C7026100B33CED /* Request */ = {
 			isa = PBXGroup;
 			children = (
+				EE9466F428C9C397003254B7 /* Enum */,
 				EECF161028C823F200AE3493 /* Repository */,
 				EECF160328C8208B00AE3493 /* Remote */,
 				EECF160128C81FC300AE3493 /* Entitiy */,
@@ -209,6 +213,14 @@
 				EE07CD0A28C7081300B33CED /* GRIG */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		EE9466F428C9C397003254B7 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				EE9466F528C9C3A5003254B7 /* Criteria.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 		EECF160128C81FC300AE3493 /* Entitiy */ = {
@@ -449,6 +461,8 @@
 			files = (
 				EEFDFF5828C8AEB40099F0A2 /* Types.graphql.swift in Sources */,
 				EEFDFF5728C8AEB40099F0A2 /* GRIGEntity.graphql.swift in Sources */,
+				EE9466F628C9C3A5003254B7 /* Criteria.swift in Sources */,
+				EED7AAD928C9B24600BDCF24 /* GRIGClient.swift in Sources */,
 				EECF160728C820C600AE3493 /* GRIGRemote.swift in Sources */,
 				EEFDFF5928C8AEB40099F0A2 /* TotalContribution.graphql.swift in Sources */,
 				EECF160928C8210B00AE3493 /* NetworkInterceptorProvider.swift in Sources */,
