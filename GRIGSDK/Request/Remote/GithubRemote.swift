@@ -16,11 +16,39 @@ final class GithubRemote {
         return ApolloClient(networkTransport: transport, store: store)
     }()
     
-    func fetchRankList() {
-        
+    func fetchUserInfo(
+        login: String,
+        from: String,
+        to: String,
+        completion: @escaping (Result<GRIGAPI.GithubUserQuery.Data.User?, Error>) -> Void
+    )  {
+        client.fetch(
+            query: GRIGAPI.GithubUserQuery(
+                login: login,
+                from: from,
+                to: to
+            )
+        ) { res in
+            switch res {
+            case let .success(data):
+                completion(.success(data.data?.user ?? nil))
+            case let .failure(err):
+                completion(.failure(err))
+            }
+        }
     }
     
-    func fetchGenerationList() {
-        
+    func fetchUserTotalContribution(
+        login: String,
+        completion: @escaping (Result<Int?,Error>) -> Void
+    ) {
+        client.fetch(query: GRIGAPI.TotalContributionQuery(login: login)) { res in
+            switch res {
+            case let .success(data):
+                    completion(.success(data.data?.user?.contributionsCollection.contributionCalendar.totalContributions ?? nil))
+            case let .failure(err):
+                completion(.failure(err))
+            }
+        }
     }
 }

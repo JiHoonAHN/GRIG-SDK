@@ -26,10 +26,7 @@ final class GRIGRemote {
         }
     }
     
-    func fetchUserTotalContribution(
-        login: String,
-        completion: @escaping  (Result<[GRIGAPI.GrigGenerationQuery.Data.Generation?], Error>) -> Void
-    ) {
+    func fetchGenerationList(completion: @escaping  (Result<[GRIGAPI.GrigGenerationQuery.Data.Generation?], Error>) -> Void) {
         client.fetch(query: GRIGAPI.GrigGenerationQuery()) { res in
             switch res {
             case let .success(data):
