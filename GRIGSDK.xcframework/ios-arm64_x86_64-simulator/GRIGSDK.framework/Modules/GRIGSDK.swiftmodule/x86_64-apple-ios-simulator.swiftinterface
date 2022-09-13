@@ -1,0 +1,464 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target x86_64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GRIGSDK
+import Apollo
+import Foundation
+@_exported import GRIGSDK
+import Swift
+import _Concurrency
+import os.log
+import os
+final public class GrigEntityQuery : Apollo.GraphQLQuery {
+  final public let operationDefinition: Swift.String
+  final public let operationName: Swift.String
+  final public var criteria: Swift.String?
+  final public var count: Swift.Int?
+  final public var page: Swift.Int?
+  final public var generation: Swift.Int?
+  public init(criteria: Swift.String? = nil, count: Swift.Int? = nil, page: Swift.Int? = nil, generation: Swift.Int? = nil)
+  final public var variables: Apollo.GraphQLMap? {
+    get
+  }
+  public struct Data : Apollo.GraphQLSelectionSet {
+    public static let possibleTypes: [Swift.String]
+    public static var selections: [Apollo.GraphQLSelection] {
+      get
+    }
+    public var resultMap: Apollo.ResultMap {
+      get
+    }
+    public init(unsafeResultMap: Apollo.ResultMap)
+    public init(ranking: [GRIGSDK.GrigEntityQuery.Data.Ranking?]? = nil)
+    public var ranking: [GRIGSDK.GrigEntityQuery.Data.Ranking?]? {
+      get
+      set
+    }
+    public struct Ranking : Apollo.GraphQLSelectionSet {
+      public static let possibleTypes: [Swift.String]
+      public static var selections: [Apollo.GraphQLSelection] {
+        get
+      }
+      public var resultMap: Apollo.ResultMap {
+        get
+      }
+      public init(unsafeResultMap: Apollo.ResultMap)
+      public init(name: Swift.String? = nil, nickname: Swift.String? = nil, bio: Swift.String? = nil, avatarUrl: Swift.String? = nil, pullRequests: Swift.Int? = nil, stared: Swift.Int? = nil, issues: Swift.Int? = nil, generation: Swift.Int? = nil, forked: Swift.Int? = nil, following: Swift.Int? = nil, followers: Swift.Int? = nil, contributions: Swift.Int? = nil)
+      public var __typename: Swift.String {
+        get
+        set
+      }
+      public var name: Swift.String? {
+        get
+        set
+      }
+      public var nickname: Swift.String? {
+        get
+        set
+      }
+      public var bio: Swift.String? {
+        get
+        set
+      }
+      public var avatarUrl: Swift.String? {
+        get
+        set
+      }
+      public var pullRequests: Swift.Int? {
+        get
+        set
+      }
+      public var stared: Swift.Int? {
+        get
+        set
+      }
+      public var issues: Swift.Int? {
+        get
+        set
+      }
+      public var generation: Swift.Int? {
+        get
+        set
+      }
+      public var forked: Swift.Int? {
+        get
+        set
+      }
+      public var following: Swift.Int? {
+        get
+        set
+      }
+      public var followers: Swift.Int? {
+        get
+        set
+      }
+      public var contributions: Swift.Int? {
+        get
+        set
+      }
+    }
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class GRIG {
+  @objc deinit
+}
+final public class TotalContributionQuery : Apollo.GraphQLQuery {
+  final public let operationDefinition: Swift.String
+  final public let operationName: Swift.String
+  final public var login: Swift.String
+  public init(login: Swift.String)
+  final public var variables: Apollo.GraphQLMap? {
+    get
+  }
+  public struct Data : Apollo.GraphQLSelectionSet {
+    public static let possibleTypes: [Swift.String]
+    public static var selections: [Apollo.GraphQLSelection] {
+      get
+    }
+    public var resultMap: Apollo.ResultMap {
+      get
+    }
+    public init(unsafeResultMap: Apollo.ResultMap)
+    public init(user: GRIGSDK.TotalContributionQuery.Data.User? = nil)
+    public var user: GRIGSDK.TotalContributionQuery.Data.User? {
+      get
+      set
+    }
+    public struct User : Apollo.GraphQLSelectionSet {
+      public static let possibleTypes: [Swift.String]
+      public static var selections: [Apollo.GraphQLSelection] {
+        get
+      }
+      public var resultMap: Apollo.ResultMap {
+        get
+      }
+      public init(unsafeResultMap: Apollo.ResultMap)
+      public init(contributionsCollection: GRIGSDK.TotalContributionQuery.Data.User.ContributionsCollection)
+      public var __typename: Swift.String {
+        get
+        set
+      }
+      public var contributionsCollection: GRIGSDK.TotalContributionQuery.Data.User.ContributionsCollection {
+        get
+        set
+      }
+      public struct ContributionsCollection : Apollo.GraphQLSelectionSet {
+        public static let possibleTypes: [Swift.String]
+        public static var selections: [Apollo.GraphQLSelection] {
+          get
+        }
+        public var resultMap: Apollo.ResultMap {
+          get
+        }
+        public init(unsafeResultMap: Apollo.ResultMap)
+        public init(contributionCalendar: GRIGSDK.TotalContributionQuery.Data.User.ContributionsCollection.ContributionCalendar)
+        public var __typename: Swift.String {
+          get
+          set
+        }
+        public var contributionCalendar: GRIGSDK.TotalContributionQuery.Data.User.ContributionsCollection.ContributionCalendar {
+          get
+          set
+        }
+        public struct ContributionCalendar : Apollo.GraphQLSelectionSet {
+          public static let possibleTypes: [Swift.String]
+          public static var selections: [Apollo.GraphQLSelection] {
+            get
+          }
+          public var resultMap: Apollo.ResultMap {
+            get
+          }
+          public init(unsafeResultMap: Apollo.ResultMap)
+          public init(totalContributions: Swift.Int)
+          public var __typename: Swift.String {
+            get
+            set
+          }
+          public var totalContributions: Swift.Int {
+            get
+            set
+          }
+        }
+      }
+    }
+  }
+  @objc deinit
+}
+final public class GrigGenerationQuery : Apollo.GraphQLQuery {
+  final public let operationDefinition: Swift.String
+  final public let operationName: Swift.String
+  public init()
+  public struct Data : Apollo.GraphQLSelectionSet {
+    public static let possibleTypes: [Swift.String]
+    public static var selections: [Apollo.GraphQLSelection] {
+      get
+    }
+    public var resultMap: Apollo.ResultMap {
+      get
+    }
+    public init(unsafeResultMap: Apollo.ResultMap)
+    public init(generation: [GRIGSDK.GrigGenerationQuery.Data.Generation?]? = nil)
+    public var generation: [GRIGSDK.GrigGenerationQuery.Data.Generation?]? {
+      get
+      set
+    }
+    public struct Generation : Apollo.GraphQLSelectionSet {
+      public static let possibleTypes: [Swift.String]
+      public static var selections: [Apollo.GraphQLSelection] {
+        get
+      }
+      public var resultMap: Apollo.ResultMap {
+        get
+      }
+      public init(unsafeResultMap: Apollo.ResultMap)
+      public init(count: Swift.Int? = nil, _id: Swift.Int? = nil)
+      public var __typename: Swift.String {
+        get
+        set
+      }
+      public var count: Swift.Int? {
+        get
+        set
+      }
+      public var _id: Swift.Int? {
+        get
+        set
+      }
+    }
+  }
+  @objc deinit
+}
+final public class GithubUserQuery : Apollo.GraphQLQuery {
+  final public let operationDefinition: Swift.String
+  final public let operationName: Swift.String
+  final public var login: Swift.String
+  final public var from: Swift.String
+  final public var to: Swift.String
+  public init(login: Swift.String, from: Swift.String, to: Swift.String)
+  final public var variables: Apollo.GraphQLMap? {
+    get
+  }
+  public struct Data : Apollo.GraphQLSelectionSet {
+    public static let possibleTypes: [Swift.String]
+    public static var selections: [Apollo.GraphQLSelection] {
+      get
+    }
+    public var resultMap: Apollo.ResultMap {
+      get
+    }
+    public init(unsafeResultMap: Apollo.ResultMap)
+    public init(user: GRIGSDK.GithubUserQuery.Data.User? = nil)
+    public var user: GRIGSDK.GithubUserQuery.Data.User? {
+      get
+      set
+    }
+    public struct User : Apollo.GraphQLSelectionSet {
+      public static let possibleTypes: [Swift.String]
+      public static var selections: [Apollo.GraphQLSelection] {
+        get
+      }
+      public var resultMap: Apollo.ResultMap {
+        get
+      }
+      public init(unsafeResultMap: Apollo.ResultMap)
+      public init(avatarUrl: Swift.String, contributionsCollection: GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection, bio: Swift.String? = nil, followers: GRIGSDK.GithubUserQuery.Data.User.Follower, following: GRIGSDK.GithubUserQuery.Data.User.Following, login: Swift.String, name: Swift.String? = nil, pullRequests: GRIGSDK.GithubUserQuery.Data.User.PullRequest, issues: GRIGSDK.GithubUserQuery.Data.User.Issue)
+      public var __typename: Swift.String {
+        get
+        set
+      }
+      public var avatarUrl: Swift.String {
+        get
+        set
+      }
+      public var contributionsCollection: GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection {
+        get
+        set
+      }
+      public var bio: Swift.String? {
+        get
+        set
+      }
+      public var followers: GRIGSDK.GithubUserQuery.Data.User.Follower {
+        get
+        set
+      }
+      public var following: GRIGSDK.GithubUserQuery.Data.User.Following {
+        get
+        set
+      }
+      public var login: Swift.String {
+        get
+        set
+      }
+      public var name: Swift.String? {
+        get
+        set
+      }
+      public var pullRequests: GRIGSDK.GithubUserQuery.Data.User.PullRequest {
+        get
+        set
+      }
+      public var issues: GRIGSDK.GithubUserQuery.Data.User.Issue {
+        get
+        set
+      }
+      public struct ContributionsCollection : Apollo.GraphQLSelectionSet {
+        public static let possibleTypes: [Swift.String]
+        public static var selections: [Apollo.GraphQLSelection] {
+          get
+        }
+        public var resultMap: Apollo.ResultMap {
+          get
+        }
+        public init(unsafeResultMap: Apollo.ResultMap)
+        public init(contributionCalendar: GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection.ContributionCalendar)
+        public var __typename: Swift.String {
+          get
+          set
+        }
+        public var contributionCalendar: GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection.ContributionCalendar {
+          get
+          set
+        }
+        public struct ContributionCalendar : Apollo.GraphQLSelectionSet {
+          public static let possibleTypes: [Swift.String]
+          public static var selections: [Apollo.GraphQLSelection] {
+            get
+          }
+          public var resultMap: Apollo.ResultMap {
+            get
+          }
+          public init(unsafeResultMap: Apollo.ResultMap)
+          public init(weeks: [GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection.ContributionCalendar.Week])
+          public var __typename: Swift.String {
+            get
+            set
+          }
+          public var weeks: [GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection.ContributionCalendar.Week] {
+            get
+            set
+          }
+          public struct Week : Apollo.GraphQLSelectionSet {
+            public static let possibleTypes: [Swift.String]
+            public static var selections: [Apollo.GraphQLSelection] {
+              get
+            }
+            public var resultMap: Apollo.ResultMap {
+              get
+            }
+            public init(unsafeResultMap: Apollo.ResultMap)
+            public init(contributionDays: [GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection.ContributionCalendar.Week.ContributionDay])
+            public var __typename: Swift.String {
+              get
+              set
+            }
+            public var contributionDays: [GRIGSDK.GithubUserQuery.Data.User.ContributionsCollection.ContributionCalendar.Week.ContributionDay] {
+              get
+              set
+            }
+            public struct ContributionDay : Apollo.GraphQLSelectionSet {
+              public static let possibleTypes: [Swift.String]
+              public static var selections: [Apollo.GraphQLSelection] {
+                get
+              }
+              public var resultMap: Apollo.ResultMap {
+                get
+              }
+              public init(unsafeResultMap: Apollo.ResultMap)
+              public init(date: Swift.String, contributionCount: Swift.Int)
+              public var __typename: Swift.String {
+                get
+                set
+              }
+              public var date: Swift.String {
+                get
+                set
+              }
+              public var contributionCount: Swift.Int {
+                get
+                set
+              }
+            }
+          }
+        }
+      }
+      public struct Follower : Apollo.GraphQLSelectionSet {
+        public static let possibleTypes: [Swift.String]
+        public static var selections: [Apollo.GraphQLSelection] {
+          get
+        }
+        public var resultMap: Apollo.ResultMap {
+          get
+        }
+        public init(unsafeResultMap: Apollo.ResultMap)
+        public init(totalCount: Swift.Int)
+        public var __typename: Swift.String {
+          get
+          set
+        }
+        public var totalCount: Swift.Int {
+          get
+          set
+        }
+      }
+      public struct Following : Apollo.GraphQLSelectionSet {
+        public static let possibleTypes: [Swift.String]
+        public static var selections: [Apollo.GraphQLSelection] {
+          get
+        }
+        public var resultMap: Apollo.ResultMap {
+          get
+        }
+        public init(unsafeResultMap: Apollo.ResultMap)
+        public init(totalCount: Swift.Int)
+        public var __typename: Swift.String {
+          get
+          set
+        }
+        public var totalCount: Swift.Int {
+          get
+          set
+        }
+      }
+      public struct PullRequest : Apollo.GraphQLSelectionSet {
+        public static let possibleTypes: [Swift.String]
+        public static var selections: [Apollo.GraphQLSelection] {
+          get
+        }
+        public var resultMap: Apollo.ResultMap {
+          get
+        }
+        public init(unsafeResultMap: Apollo.ResultMap)
+        public init(totalCount: Swift.Int)
+        public var __typename: Swift.String {
+          get
+          set
+        }
+        public var totalCount: Swift.Int {
+          get
+          set
+        }
+      }
+      public struct Issue : Apollo.GraphQLSelectionSet {
+        public static let possibleTypes: [Swift.String]
+        public static var selections: [Apollo.GraphQLSelection] {
+          get
+        }
+        public var resultMap: Apollo.ResultMap {
+          get
+        }
+        public init(unsafeResultMap: Apollo.ResultMap)
+        public init(totalCount: Swift.Int)
+        public var __typename: Swift.String {
+          get
+          set
+        }
+        public var totalCount: Swift.Int {
+          get
+          set
+        }
+      }
+    }
+  }
+  @objc deinit
+}

@@ -1,0 +1,11 @@
+framework module GRIGSDK {
+  umbrella header "GRIGSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module GRIGSDK.Swift {
+    header "GRIGSDK-Swift.h"
+    requires objc
+}

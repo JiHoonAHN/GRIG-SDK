@@ -1,2 +1,1 @@
 # GRIG-SDK
-# GRIGSDK-Dev
