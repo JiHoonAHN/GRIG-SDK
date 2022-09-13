@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/JiHoonAHN/GRIG-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'JiHoonAHN' => 'ahnjh1028@naver.com' }
-  s.source           = { :git => 'https://github.com/JiHoonAHN/GRIG-SDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/JiHoonAHN/GRIG-SDK.git', :tag => 0.1.1 }
 
   s.ios.deployment_target = '9.0'
   s.ios.vendored_frameworks = "GRIGSDK.xcframework"
