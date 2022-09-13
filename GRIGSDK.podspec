@@ -16,8 +16,10 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/JiHoonAHN/GRIG-SDK.git", :tag => "#{s.version}" }
 
   s.vendored_frameworks = "GRIGSDK.xcframework"
-  s.swift_version  = '5.1'
+  s.platform = :ios
+  s.swift_version = "4.2"
+  s.ios.deployment_target  = '12.0'
+
   s.dependency 'Apollo'
-  s.platform = :ios, "9.0"
-  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
+
 end
