@@ -8,16 +8,16 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GRIGSDK'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'Github-Rangkin-for-GSM SDK'
   s.homepage         = 'https://github.com/JiHoonAHN/GRIG-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'JiHoonAHN' => 'ahnjh1028@naver.com' }
   s.source       = { :git => "https://github.com/JiHoonAHN/GRIG-SDK.git", :tag => "#{s.version}" }
 
-  s.ios.deployment_target = '9.0'
   s.vendored_frameworks = "GRIGSDK.xcframework"
   
   s.dependency 'Apollo'
-  s.platform = :ios
+  s.platform = :ios, "9.0"
+
 end
