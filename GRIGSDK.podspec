@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/JiHoonAHN/GRIG-SDK.git", :tag => "#{s.version}" }
 
   s.vendored_frameworks = "GRIGSDK.xcframework"
-  
+  s.swift_version  = '4.0'
   s.dependency 'Apollo'
   s.platform = :ios, "9.0"
 
