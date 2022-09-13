@@ -19,5 +19,5 @@ Pod::Spec.new do |s|
   s.swift_version  = '4.0'
   s.dependency 'Apollo'
   s.platform = :ios, "9.0"
-
+  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '"$(SDKROOT)/usr/include/libxml2"' }
 end
