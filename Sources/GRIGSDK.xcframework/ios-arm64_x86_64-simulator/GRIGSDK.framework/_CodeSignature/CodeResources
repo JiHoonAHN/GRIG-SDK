@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/GRIGSDK-Swift.h</key>
 		<data>
-		RD1YKuMmJbKIe9EtCJLP/HmN3tw=
+		hoXfeEUfO3RiIxIttUujy4ovLxw=
 		</data>
 		<key>Headers/GRIGSDK.h</key>
 		<data>
@@ -26,35 +26,51 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gUpcP8a82K56Yqg1CwbocWrbGZk=
+		SoKR6xt0RyWCfjTd/MZ3PZ5Rduw=
+		</data>
+		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<data>
+		GGbwSRlh6dXKurPS6R+XXMWAWIk=
+		</data>
+		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		nvG1oPT5/DbwgldagJjF54Ze/UE=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yUhMWdef4MkgA0FO+9QTvG5F53E=
+		f+oH7Rn6oWImKP+Q1ywsEZV3MP8=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rMQBOK8uHMOMtP8OMjWWeSKrWWA=
+		nvG1oPT5/DbwgldagJjF54Ze/UE=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qJpM1uMadystGTRqpn6rj6s81uc=
+		ArL83/Yo0TQgs7RJjxleGsGVCbg=
+		</data>
+		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		GGbwSRlh6dXKurPS6R+XXMWAWIk=
+		</data>
+		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		XqCz8XqlehZHaf4wR4ceZVAU7bY=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		GfqpyDXBHBZR0di/3H0BqAl+vHA=
+		oz0NKkheYXILd7iA0M2dAzRujck=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AkS+wvcHqxCb7miGPRRg1x0u2zs=
+		XqCz8XqlehZHaf4wR4ceZVAU7bY=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		losVXYwDGadRs8TzTPiaXssgmtM=
+		93p3R89TWJx47G37FpcCSuiR0DQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		RsxsVPe01KAcnqm2G3/L1/p2fA8=
+		VELUkJ7V12KmWtE2KvCd3s7UGOE=
 		</data>
 		<key>TotalContribution.graphql</key>
 		<data>
@@ -96,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I2sM1c5ct6QVVEfpAMt45wGLd9l/fBPsM/l63leUKmc=
+			C9soeRVUjJWdTyKLycM9MOKuMNYoELkja5/TZJlOATA=
 			</data>
 		</dict>
 		<key>Headers/GRIGSDK.h</key>
@@ -106,53 +122,81 @@
 			KHyEw94KACrMii2GdmgOdrDaKB45RLSmQjvZ5r70rLk=
 			</data>
 		</dict>
+		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ig0zuSGsO0bC28kTq6+i9cY9D/lRDBS7eG/gaYTB/gE=
+			</data>
+		</dict>
+		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+m5snhZpm94rmT/9BZqZjmwP/Dv0IJ2jWvSfg3XsZjM=
+			</data>
+		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oif/ueVkbp8zIXv238dfbHa8If1YQ5D0Sb7VVduQjiY=
+			15SN/QqIQjVC5fxlDAVqKnTj/tQ6SARvshs6aCo28hw=
 			</data>
 		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EaeU99ifyqE+dBkuyb5ANHiAHW/Y9VVUHekQ76cbQE8=
+			+m5snhZpm94rmT/9BZqZjmwP/Dv0IJ2jWvSfg3XsZjM=
 			</data>
 		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XEcOWkobTrOHVpXGWU1jgcTsrFn6FkKNGKhtubBPEVY=
+			T9SEjLL7KQ2o+vh2bog5wTclZHtYqCsfLOYh+Qj7GhY=
+			</data>
+		</dict>
+		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ig0zuSGsO0bC28kTq6+i9cY9D/lRDBS7eG/gaYTB/gE=
+			</data>
+		</dict>
+		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			72TrvaiBjDcftlrlzrGn6S+CzI9ziTl4kUtLYvJMsUU=
 			</data>
 		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sIsw+peS34in1xwPwI/26eXasDL1jxvoMLf9wpnmy3I=
+			vUadkAw/X4060mbSE0HONzu5dDLM7PcVMqBywFlN4Oc=
 			</data>
 		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oEfXYImg74mz9SOp6X4vNWxOoXBOpoCR/b0o083YDjg=
+			72TrvaiBjDcftlrlzrGn6S+CzI9ziTl4kUtLYvJMsUU=
 			</data>
 		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q8t+HG8XG5AC5eqyYIE0szROr2/TXpLKnKhuPesFqNM=
+			wmzyJme6MhEAHualtd0777GEh2LnXkJ3jyka7BoMSzY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PL7YgqrvbnhNGHwjKRRHWuoD66aUqMSU0ry3BNZOtDU=
+			8sc4rwodZ77IpRQYaM/epeO+2mqfkje04pl6ytG0SDE=
 			</data>
 		</dict>
 		<key>TotalContribution.graphql</key>
