@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "GRIG-SDK",
-    platforms: [.iOS(.v9)],
+    platforms: [.iOS(.v12)],
     products: [
         .library(
             name: "GRIG-SDK",
