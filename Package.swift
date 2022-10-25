@@ -12,7 +12,7 @@ let package = Package(
             targets: ["GRIGSDK"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apollographql/apollo-ios",.upToNextMajor(from: "0.9.5")),
+        .package(url: "https://github.com/apollographql/apollo-ios", branch: "main"),
     ],
     targets: [
         .binaryTarget(name: "GRIGSDK", path: "./Sources/GRIGSDK.xcframework"),

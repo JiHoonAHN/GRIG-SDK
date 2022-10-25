@@ -1,13 +1,11 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios15.5-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name GRIGSDK
-// swift-module-flags-ignorable: -enable-bare-slash-regex
 import Apollo
 import Foundation
 @_exported import GRIGSDK
 import Swift
 import _Concurrency
-import _StringProcessing
 import os.log
 import os
 final public class GrigEntityQuery : Apollo.GraphQLQuery {
@@ -101,35 +99,8 @@ final public class GrigEntityQuery : Apollo.GraphQLQuery {
   }
   @objc deinit
 }
-public enum Criteria : Swift.String, Swift.CaseIterable {
-  case contributions
-  case stared
-  case following
-  case follower
-  case forked
-  case issues
-  case pullRequests
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [GRIGSDK.Criteria]
-  public typealias RawValue = Swift.String
-  public static var allCases: [GRIGSDK.Criteria] {
-    get
-  }
-  public var rawValue: Swift.String {
-    get
-  }
-}
 @_hasMissingDesignatedInitializers final public class GRIG {
-  public static let get_instance: GRIGSDK.GRIG
   @objc deinit
-}
-extension GRIGSDK.GRIG {
-  final public func githubUserInfo(login: Swift.String, from: Swift.String, to: Swift.String, completion: @escaping (Swift.Result<GRIGSDK.GithubUserQuery.Data.User?, Swift.Error>) -> Swift.Void)
-  final public func githubUserTotalContribution(login: Swift.String, completion: @escaping (Swift.Result<Swift.Int?, Swift.Error>) -> Swift.Void)
-}
-extension GRIGSDK.GRIG {
-  final public func grigRankList(criteria: GRIGSDK.Criteria, count: Swift.Int, page: Swift.Int, generation: Swift.Int, completion: @escaping (Swift.Result<[GRIGSDK.GrigEntityQuery.Data.Ranking?], Swift.Error>) -> Swift.Void)
-  final public func grigGenerationList(completion: @escaping (Swift.Result<[GRIGSDK.GrigGenerationQuery.Data.Generation?], Swift.Error>) -> Swift.Void)
 }
 final public class TotalContributionQuery : Apollo.GraphQLQuery {
   final public let operationDefinition: Swift.String
@@ -491,6 +462,3 @@ final public class GithubUserQuery : Apollo.GraphQLQuery {
   }
   @objc deinit
 }
-extension GRIGSDK.Criteria : Swift.Equatable {}
-extension GRIGSDK.Criteria : Swift.Hashable {}
-extension GRIGSDK.Criteria : Swift.RawRepresentable {}
