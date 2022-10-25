@@ -6,6 +6,6 @@ framework module GRIGSDK {
 }
 
 module GRIGSDK.Swift {
-  header "GRIGSDK-Swift.h"
-  requires objc
+    header "GRIGSDK-Swift.h"
+    requires objc
 }

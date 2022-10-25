@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'GRIGSDK'
-  s.version          = '0.1.4'
+  s.version          = '0.1.7'
   s.summary          = 'Github-Rangkin-for-GSM SDK'
   s.homepage         = 'https://github.com/JiHoonAHN/GRIG-SDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
