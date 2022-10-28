@@ -3,6 +3,13 @@
 ### Quick Start
 GRIG-SDK를 사용하기 위한 최소한의 연동 단계를 안내합니다.
 
+### System Requirement
+```
+1. 빌드환경: Xcode
+2. Xcode version : 13.0 이상
+3. iOS version : 12.0 이상
+```
+
 ### installation
 
 **SwiftPackageManager**
@@ -20,13 +27,6 @@ let package = Package(
 **CocoaPods**
 ```ruby
 pod 'GRIGSDK', '~> 0.1.10'
-```
-
-System Requirement
-```
-1. 빌드환경: Xcode
-2. Xcode version : 13.0 이상
-3. iOS version : 12.0 이상
 ```
 
 #### SDK import 경로
