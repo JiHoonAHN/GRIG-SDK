@@ -13736,357 +13736,357 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
       "kind": "StringLiteral",
       "offset": 266,
       "length": 460,
       "value": "\"query GRIGEntity($criteria: String, $count: Int, $page: Int, $generation: Int) {\n  ranking(\n    criteria: $criteria\n    count: $count\n    page: $page\n    generation: $generation\n  ) {\n    __typename\n    name\n    nickname\n    bio\n    avatar_url\n    pullRequests\n    stared\n    issues\n    generation\n    forked\n    following\n    followers\n    contributions\n  }\n}\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 12,
       "value": "\"GRIGEntity\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
       "kind": "Array",
       "offset": 1328,
       "length": 9,
       "value": "[\"Query\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGEntity.graphql.swift",
       "kind": "Array",
       "offset": 2754,
       "length": 8,
       "value": "[\"User\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 89,
       "length": 15,
       "value": "\"contributions\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 8,
       "value": "\"stared\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 11,
       "value": "\"following\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 185,
       "length": 11,
       "value": "\"followers\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 8,
       "value": "\"forked\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 8,
       "value": "\"issues\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 14,
       "value": "\"pullRequests\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 89,
       "length": 15,
       "value": "\"contributions\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 123,
       "length": 8,
       "value": "\"stared\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 153,
       "length": 11,
       "value": "\"following\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 185,
       "length": 11,
       "value": "\"followers\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 8,
       "value": "\"forked\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 242,
       "length": 8,
       "value": "\"issues\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Enum\/Criteria.swift",
       "kind": "StringLiteral",
       "offset": 275,
       "length": 14,
       "value": "\"pullRequests\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GRIGRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GRIGRemote.swift",
       "kind": "StringLiteral",
       "offset": 180,
       "length": 73,
       "value": "\"https:\/\/d6ui2fy5uj.execute-api.ap-northeast-2.amazonaws.com\/api\/graphql\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
       "kind": "StringLiteral",
       "offset": 273,
       "length": 283,
       "value": "\"query TotalContribution($login: String!) {\n  user(login: $login) {\n    __typename\n    contributionsCollection {\n      __typename\n      contributionCalendar {\n        __typename\n        totalContributions\n      }\n    }\n  }\n}\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
       "kind": "StringLiteral",
       "offset": 595,
       "length": 19,
       "value": "\"TotalContribution\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
       "kind": "Array",
       "offset": 866,
       "length": 9,
       "value": "[\"Query\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
       "kind": "Array",
       "offset": 1746,
       "length": 8,
       "value": "[\"User\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
       "kind": "Array",
       "offset": 3129,
       "length": 27,
       "value": "[\"ContributionsCollection\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/TotalContribution.graphql.swift",
       "kind": "Array",
       "offset": 4551,
       "length": 24,
       "value": "[\"ContributionCalendar\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
       "kind": "StringLiteral",
       "offset": 270,
       "length": 116,
       "value": "\"query GRIGGeneration {\n  generation {\n    __typename\n    count\n    _id\n  }\n}\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
       "kind": "StringLiteral",
       "offset": 425,
       "length": 16,
       "value": "\"GRIGGeneration\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
       "kind": "Array",
       "offset": 558,
       "length": 9,
       "value": "[\"Query\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GRIGGeneration.graphql.swift",
       "kind": "Array",
       "offset": 1880,
       "length": 14,
       "value": "[\"Generation\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "StringLiteral",
       "offset": 266,
       "length": 836,
       "value": "\"query GithubUser($login: String!, $from: DateTime!, $to: DateTime!) {\n  user(login: $login) {\n    __typename\n    avatarUrl\n    contributionsCollection(from: $from, to: $to) {\n      __typename\n      contributionCalendar {\n        __typename\n        weeks {\n          __typename\n          contributionDays {\n            __typename\n            date\n            contributionCount\n          }\n        }\n      }\n    }\n    bio\n    followers {\n      __typename\n      totalCount\n    }\n    following {\n      __typename\n      totalCount\n    }\n    login\n    name\n    pullRequests {\n      __typename\n      totalCount\n    }\n    issues {\n      __typename\n      totalCount\n    }\n  }\n}\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "StringLiteral",
       "offset": 1141,
       "length": 12,
       "value": "\"GithubUser\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 1543,
       "length": 9,
       "value": "[\"Query\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 2423,
       "length": 8,
       "value": "[\"User\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 7040,
       "length": 27,
       "value": "[\"ContributionsCollection\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 8462,
       "length": 24,
       "value": "[\"ContributionCalendar\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 9917,
       "length": 28,
       "value": "[\"ContributionCalendarWeek\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 11594,
       "length": 27,
       "value": "[\"ContributionCalendarDay\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 13502,
       "length": 22,
       "value": "[\"FollowerConnection\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 14719,
       "length": 23,
       "value": "[\"FollowingConnection\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 15940,
       "length": 25,
       "value": "[\"PullRequestConnection\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Entitiy\/GithubUser.graphql.swift",
       "kind": "Array",
       "offset": 17159,
       "length": 19,
       "value": "[\"IssueConnection\"]"
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
       "kind": "StringLiteral",
       "offset": 171,
       "length": 9,
       "value": "\"Network\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
       "kind": "StringLiteral",
       "offset": 243,
       "length": 7,
       "value": "\"Debug\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
       "kind": "StringLiteral",
       "offset": 312,
       "length": 6,
       "value": "\"Info\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Extension\/OSLog\/OSLogExt.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 7,
       "value": "\"Error\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
       "kind": "StringLiteral",
       "offset": 200,
       "length": 32,
       "value": "\"https:\/\/api.github.com\/graphql\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
       "kind": "StringLiteral",
       "offset": 394,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
       "kind": "StringLiteral",
       "offset": 411,
       "length": 63,
       "value": "\"bearer \""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
       "kind": "StringLiteral",
       "offset": 457,
       "length": 8,
       "value": "\"GITHUB\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
       "kind": "StringLiteral",
       "offset": 470,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIG DEV\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
+      "filePath": "\/Users\/ji-hoonahn\/Desktop\/JiHoonAHN\/Service\/Framework\/GRIG\/GRIGSDK-Dev\/GRIGSDK\/Request\/Remote\/GithubRemote.swift",
       "kind": "StringLiteral",
       "offset": 473,
       "length": 2,

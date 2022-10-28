@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		MpzPxIFyJLvOS6/p0tLIlw6zHd0=
+		LV7NLqmNQunLLBLZmjV1OwmulNM=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		GGbwSRlh6dXKurPS6R+XXMWAWIk=
+		OqtXXSk3mBg2iYvelyiCKhCZf00=
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Mh0brcqSHZwWlJD2HW7wS3fIqXM=
+		Tcs4cJjtaL4uv26aZDM1U9R/CsQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ig0zuSGsO0bC28kTq6+i9cY9D/lRDBS7eG/gaYTB/gE=
+			M+LQzT3fGLltp6/Zv7b+Pi/ehxe9t1k/ZpdliGQXdk4=
 			</data>
 		</dict>
 		<key>Modules/GRIGSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -134,7 +134,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			u+lbKifNRLBu15ECzG64EFONNsRFEotrNd1bGlYmQ0g=
+			ntVpSv+s01YeSxyi3zhp32Rll9vUUGRTmDD4PGOv+bE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
