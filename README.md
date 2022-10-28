@@ -1,10 +1,9 @@
 # GRIG-SDK 연동가이드 (iOS)
 
-#### Quick Start
+### Quick Start
 GRIG-SDK를 사용하기 위한 최소한의 연동 단계를 안내합니다.
-```
 
-#### installation
+### installation
 
 **SwiftPackageManager**
 ```swift
