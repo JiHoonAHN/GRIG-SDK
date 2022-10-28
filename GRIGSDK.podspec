@@ -20,6 +20,6 @@ Pod::Spec.new do |s|
   s.swift_version = "4.2"
   s.ios.deployment_target  = '12.0'
 
-  s.dependency 'Apollo' 
+  s.dependency 'Apollo', '~> 0.53.0'
 
 end
