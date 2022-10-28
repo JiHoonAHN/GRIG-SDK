@@ -23,6 +23,7 @@ pod 'GRIGSDK', '~> 0.1.10'
 ```
 
 System Requirement
+```
 1. 빌드환경: Xcode
 2. Xcode version : 13.0 이상
 3. iOS version : 12.0 이상
